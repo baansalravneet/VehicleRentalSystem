@@ -42,14 +42,14 @@ Rent different kinds of vehicles such as cars and bikes.
 |BOOK B1 BIKE 2 5|900|
 |DISPLAY_VEHICLES B1 1 5|V2|
 
-##Other Details:
+## Other Details:
 1. Use the in-memory store.
 2. Do not create any UI for the application.
 3. Write a driver class for demo purposes. Which will execute all the commands in one place in the code and test cases.
 4. Please prioritize code compilation, execution, and completion.
 5. Work on the expected output first and then add good-to-have features of your own.
 
-##Expectations:
+## Expectations:
 1. Make sure that you can execute your code and show that it is working.
 2. Make sure that the code is functionally correct.
 3. Work on the expected output first and then add good-to-have features of your own.
@@ -59,7 +59,7 @@ Rent different kinds of vehicles such as cars and bikes.
 7. Code should be easily testable.
 8. Input can be taken in your desired format[not necessary to follow the same grammar], but the API’s should remain as is(should contain all the input params)
 
-##Things to keep in mind while submitting the code:
+## Things to keep in mind while submitting the code:
 * Coding solution should be in Java.
 * Working code is required.
 * Code is evaluated for proper domain modeling and design, need not be optimized.
