@@ -20,27 +20,27 @@ Rent different kinds of vehicles such as cars and bikes.
 6. Dynamic pricing – demand vs supply. If 80% of cars in a particular branch are booked, increase the price by 10%.
 
 ## Input and Output scenarios:
-COMMAND|OUTPUT|DESCRIPTION
----|---|---
-ADD_BRANCH|TRUE if the operation succeeds else FALSE|onboard branch (Branch Name, Vehicle Type)
-ADD_VEHICLE|TRUE if the operation succeeds else FALSE|onboard vehicle - (Branch Name, Vehicle Type, vehicle id, price)
-BOOK|Booking Price, if booking succeeds else -1|book a vehicle - (Branch id, vehicle type, start time, end time)
-DISPLAY_VEHICLES|Vehicle Ids, comma-separated|display all available vehicles for a branch, sorted on price ( Branch id, start time, end time )
+|COMMAND|OUTPUT|DESCRIPTION|
+|---|---|---|
+|ADD_BRANCH|TRUE if the operation succeeds else FALSE|onboard branch (Branch Name, Vehicle Type)|
+|ADD_VEHICLE|TRUE if the operation succeeds else FALSE|onboard vehicle - (Branch Name, Vehicle Type, vehicle id, price)|
+|BOOK|Booking Price, if booking succeeds else -1|book a vehicle - (Branch id, vehicle type, start time, end time)|
+|DISPLAY_VEHICLES|Vehicle Ids, comma-separated|display all available vehicles for a branch, sorted on price ( Branch id, start time, end time )|
 
 ## SAMPLE INPUT-OUTPUT 1
-INPUT|OUTPUT
----|---
-ADD_BRANCH B1 CAR,BIKE,VAN|TRUE
-ADD_VEHICLE B1 CAR V1 500|TRUE
-ADD_VEHICLE B1 CAR V2 1000|TRUE
-ADD_VEHICLE B1 BIKE V3 250|TRUE
-ADD_VEHICLE B1 BIKE V4 300|TRUE
-ADD_VEHICLE B1 BUS V5 2500|FALSE
-BOOK B1 VAN 1 5|-1
-BOOK B1 CAR 1 3|1000
-BOOK B1 BIKE 2 3|250
-BOOK B1 BIKE 2 5|900
-DISPLAY_VEHICLES B1 1 5|V2
+|INPUT|OUTPUT|
+|---|---|
+|ADD_BRANCH B1 CAR,BIKE,VAN|TRUE|
+|ADD_VEHICLE B1 CAR V1 500|TRUE|
+|ADD_VEHICLE B1 CAR V2 1000|TRUE|
+|ADD_VEHICLE B1 BIKE V3 250|TRUE|
+|ADD_VEHICLE B1 BIKE V4 300|TRUE|
+|ADD_VEHICLE B1 BUS V5 2500|FALSE|
+|BOOK B1 VAN 1 5|-1|
+|BOOK B1 CAR 1 3|1000|
+|BOOK B1 BIKE 2 3|250|
+|BOOK B1 BIKE 2 5|900|
+|DISPLAY_VEHICLES B1 1 5|V2|
 
 ##Other Details:
 1. Use the in-memory store.
