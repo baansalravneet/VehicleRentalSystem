@@ -27,7 +27,7 @@ Rent different kinds of vehicles such as cars and bikes.
 |BOOK|Booking Price, if booking succeeds else -1|book a vehicle - (Branch id, vehicle type, start time, end time)|
 |DISPLAY_VEHICLES|Vehicle Ids, comma-separated|display all available vehicles for a branch, sorted on price ( Branch id, start time, end time )|
 
-## SAMPLE INPUT-OUTPUT 1
+## Sample input and output
 |INPUT|OUTPUT|
 |---|---|
 |ADD_BRANCH B1 CAR,BIKE,VAN|TRUE|
