@@ -1,4 +1,4 @@
-# Vehicle-Rental
+# Vehicle Rental
 LLD for Vehicle Rental Store
 
 ## The Challenge
