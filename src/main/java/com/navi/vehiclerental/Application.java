@@ -23,7 +23,7 @@ public class Application {
     Application driver = new Application();
     driver.initialize();
 
-    driver.run();
+    driver.run(args);
   }
 
   public void initialize() {
@@ -39,13 +39,13 @@ public class Application {
     this.inputParser = new InputParser(commandFactory);
   }
 
-  public void run() throws FileNotFoundException {
-    Scanner sc = new Scanner(System.in);
+  public void run(String[] args) throws FileNotFoundException {
+//    Scanner sc = new Scanner(System.in);
 
-    System.out.println("Enter test file path");
-    String path = sc.nextLine();
+//    System.out.println("Enter test file path");
+//    String path = sc.nextLine();
 
-    File file = new File(path);
+    File file = new File(args[0]);
     Scanner fileScanner = new Scanner(file);
 
     while (fileScanner.hasNext()) {
@@ -56,12 +56,12 @@ public class Application {
       }
     }
 
-    while (true) {
-      String input = sc.nextLine();
-      Command command = this.inputParser.getCommand(input);
-      if (command != null) {
-        command.execute();
-      }
-    }
+//    while (true) {
+//      String input = sc.nextLine();
+//      Command command = this.inputParser.getCommand(input);
+//      if (command != null) {
+//        command.execute();
+//      }
+//    }
   }
 }
