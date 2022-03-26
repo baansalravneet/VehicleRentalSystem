@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 /**
- * Handles creating Branch objects
+ * Creates Branch objects
  */
 public class BranchFactory {
 

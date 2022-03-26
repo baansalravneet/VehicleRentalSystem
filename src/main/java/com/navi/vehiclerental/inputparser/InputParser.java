@@ -4,6 +4,9 @@ import com.navi.vehiclerental.commands.Command;
 import com.navi.vehiclerental.commands.CommandFactory;
 import com.navi.vehiclerental.commands.CommandType;
 
+/**
+ * Parser for Commands
+ */
 public class InputParser {
 
   private final CommandFactory commandFactory;

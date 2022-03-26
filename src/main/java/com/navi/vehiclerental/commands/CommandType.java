@@ -1,5 +1,8 @@
 package com.navi.vehiclerental.commands;
 
+/**
+ * Input commands
+ */
 public enum CommandType {
 
   ADD_BRANCH {

@@ -36,4 +36,8 @@ public class Branch {
   public void addVehicle(Vehicle vehicle) {
     this.vehicles.add(vehicle);
   }
+
+  public int totalVehicles() {
+    return this.vehicles.size();
+  }
 }

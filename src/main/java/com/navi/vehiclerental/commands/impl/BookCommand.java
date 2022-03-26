@@ -4,6 +4,9 @@ import com.navi.vehiclerental.commands.Command;
 import com.navi.vehiclerental.models.Slot;
 import com.navi.vehiclerental.services.BookingService;
 
+/**
+ * Book command
+ */
 public class BookCommand implements Command {
 
   private final BookingService bookingService;

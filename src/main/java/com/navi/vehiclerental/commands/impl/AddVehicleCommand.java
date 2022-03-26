@@ -3,6 +3,9 @@ package com.navi.vehiclerental.commands.impl;
 import com.navi.vehiclerental.commands.Command;
 import com.navi.vehiclerental.services.OnboardService;
 
+/**
+ * Add vehicle command
+ */
 public class AddVehicleCommand implements Command {
 
   private final OnboardService onboardService;

@@ -10,14 +10,12 @@ public class Vehicle {
 
   private final String vehicleId;
   private final String vehicleType;
-  private final String branchId;
-  private final int price;
-  private List<Slot> bookedSlots;
+  private final double price;
+  private final List<Slot> bookedSlots;
 
-  public Vehicle(String vehicleId, String vehicleType, String branchId, int price) {
+  public Vehicle(String vehicleId, String vehicleType, int price) {
     this.vehicleId = vehicleId;
     this.vehicleType = vehicleType;
-    this.branchId = branchId;
     this.price = price;
     this.bookedSlots = new ArrayList<>();
   }
@@ -26,7 +24,7 @@ public class Vehicle {
     return vehicleId;
   }
 
-  public int getPrice() {
+  public double getPrice() {
     return price;
   }
 

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Get best Vehicle according to the strategy
+ * Get the best Vehicle according to the strategy
  */
 public interface BookingStrategy {
   Optional<Vehicle> getVehicle(List<Vehicle> availableVehicles);

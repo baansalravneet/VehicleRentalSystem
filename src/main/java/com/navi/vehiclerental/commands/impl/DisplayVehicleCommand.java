@@ -8,6 +8,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Display vehicle command
+ */
 public class DisplayVehicleCommand implements Command {
 
   private final OnboardService onboardService;

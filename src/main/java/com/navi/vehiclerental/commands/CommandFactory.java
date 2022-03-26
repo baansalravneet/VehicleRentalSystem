@@ -8,6 +8,9 @@ import com.navi.vehiclerental.models.Slot;
 import com.navi.vehiclerental.services.BookingService;
 import com.navi.vehiclerental.services.OnboardService;
 
+/**
+ * Command Factory
+ */
 public class CommandFactory {
 
   private final OnboardService onboardService;

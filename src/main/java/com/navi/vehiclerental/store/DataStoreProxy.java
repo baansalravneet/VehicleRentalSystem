@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Only handling saving and fetching of Branch and Vehicle objects
+ * A Proxy class for external database.
+ * Only handling reads and writes.
  */
 public class DataStoreProxy {
 

@@ -7,7 +7,8 @@ import com.navi.vehiclerental.models.Vehicle;
 import com.navi.vehiclerental.store.DataStoreProxy;
 
 /**
- * Handles logic for on-boarding a Branch and a Vehicle
+ * Onboard service.
+ * Adds new branches and vehicles
  */
 public class OnboardService {
 
@@ -31,12 +32,13 @@ public class OnboardService {
   }
 
   public boolean addVehicle(String branchId, String vehicleId, String vehicleType, int price) {
+    // basic validation for a vehicle to exist
     if (this.dataStoreProxy.getVehicle(vehicleId) != null
         || this.dataStoreProxy.getBranch(branchId) == null
         || !this.dataStoreProxy.getBranch(branchId).containsVehicleType(vehicleType)) {
       return false;
     }
-    Vehicle vehicle = this.vehicleFactory.createVehicle(branchId, vehicleId, vehicleType, price);
+    Vehicle vehicle = this.vehicleFactory.createVehicle(vehicleId, vehicleType, price);
     this.dataStoreProxy.addVehicle(vehicle);
     this.dataStoreProxy.getBranch(branchId).addVehicle(vehicle);
     return true;
